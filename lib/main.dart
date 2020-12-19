@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: ,
+      debugShowCheckedModeBanner: falses,
       title: 'Esewa Integration by visionx',
       theme: ThemeData(
         primarySwatch: Colors.blue,
