@@ -2,7 +2,7 @@ import 'package:esewaPayment/services/esewa_service.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
-  EsewaPayment _esewaPay = EsewaPayment();
+  final EsewaPayment _esewaPay = EsewaPayment();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
