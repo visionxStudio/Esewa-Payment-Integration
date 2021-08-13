@@ -5,7 +5,7 @@ class EsewaPayment {
   static ESewaConfiguration _configuration = ESewaConfiguration(
       clientID: "JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R",
       secretKey: "BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==",
-      environment: ESewaConfiguration.ENVIRONMENT_TEST //ENVIRONMENT_LIVE
+      environment: ESewaConfiguration.ENVIRONMENT_TEST //env 
       );
 
   static ESewaPnp _eSewaPnp = ESewaPnp(configuration: _configuration);
@@ -16,10 +16,9 @@ class EsewaPayment {
         amount: 800,
         productName: "Pubg UC Payment",
         productID: "agd55agaga85hr",
-        callBackURL: "<Call-Back-URL>",
+        callBackURL: "<Call-Back-URL>", // some callback url in here
       );
       final _res = await _eSewaPnp.initPayment(payment: _payment);
-      print("************************************************");
       print(_res);
     } catch (error) {
       print("Error occurred");
